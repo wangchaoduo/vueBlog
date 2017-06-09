@@ -72,6 +72,7 @@ router.post('/article/noAuthArtilcelists',function (req,res,next){
 })
 // 获取所有文章(每次返回10个)前台使用
 router.post('/article/articleLists',function (req,res,next){
+  console.log(132437)
   let {page,limit}  =req.body
   api.getAllArticles(page,limit)
       .then((result)=>{

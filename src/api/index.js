@@ -35,63 +35,63 @@ front_instance.interceptors.response.use(response=>{
 export default {
   // 注册
   localReg(data){
-    return axios.post('/api/reg',data)
+    return axios.post('http://www.jzxclub.com:3009/api/reg',data)
   },
   // 登录
   localLogin(data){
-    return axios.post('/api/login',data)
+    return axios.post('http://www.jzxclub.com:3009/api/login',data)
   },
   //获取文章列表{带分页获取}
   getArticleList(data){
-    return instance.post('/api/article/lists',data);
+    return instance.post('http://www.jzxclub.com:3009/api/article/lists',data);
   },
   // 不带分页获取文章
   getArticleLists(params){
-    return front_instance.post('/api/article/articleLists',params);
+    return front_instance.post('http://www.jzxclub.com:3009/api/article/articleLists',params);
   },
   // 根据classify获取文章列表
   getArticlesByClassify(params){
-    return front_instance.post('/api/article/noAuthArtilcelists',params);
+    return front_instance.post('http://www.jzxclub.com:3009/api/article/noAuthArtilcelists',params);
   },
   // 创建文章
   createArticle(params){
-    return instance.post('/api/article/create',params);
+    return instance.post('http://www.jzxclub.com:3009/api/article/create',params);
   },
 // 删除一篇文章
 removeOneArticle(params){
-    return instance.post('/api/article/remove',params);
+    return instance.post('http://www.jzxclub.com:3009/api/article/remove',params);
 },
 // 根据postID获取一篇文章(带权限)
 getOneArticle(params){
-  return instance.post('/api/article/onePage',params);
+  return instance.post('http://www.jzxclub.com:3009/api/article/onePage',params);
 },
 // 根据postID获取一篇文章(不带权限)
 getOneArticleNoAuth(params){
-  return front_instance.post('/api/article/noAuth',params);
+  return front_instance.post('http://www.jzxclub.com:3009/api/article/noAuth',params);
 },
 // 编辑一篇文章
 editArticle(params){
-  return instance.post('/api/article/edit',params);
+  return instance.post('http://www.jzxclub.com:3009/api/article/edit',params);
 },
   // 获取分类列表
   getClassify(){
-    return instance.get('/api/classify/lists');
+    return instance.get('http://www.jzxclub.com:3009/api/classify/lists');
   },
   getNoAuthClass(){
-    return   front_instance.get('/api/classify/noAuth');
+    return   front_instance.get('http://www.jzxclub.com:3009/api/classify/noAuth');
   },
 
   // 删除某一个分类
   removeClassifyList(params){
-    return instance.post('/api/classify/remove',params);
+    return instance.post('http://www.jzxclub.com:3009/api/classify/remove',params);
   },
   // 添加分类
   addClassify(params){
-    return instance.post('/api/classify/create',params);
+    return instance.post('http://www.jzxclub.com:3009/api/classify/create',params);
   },
 
   // 编辑分类
   editClassfy(params){
-    return instance.post('/api/classify/edit',params);
+    return instance.post('http://www.jzxclub.com:3009/api/classify/edit',params);
   }
 }

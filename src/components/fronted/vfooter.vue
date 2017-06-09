@@ -1,6 +1,6 @@
 <template lang="html">
   <footer>
-    <p>Copyrights © 2017 平凡之路. All Rights Reserved.</p>
+    <p style="border-top:1px solid #ccc">我祈祷拥有一颗透明的心灵和会流泪的眼睛</p>
   </footer>
 </template>
 

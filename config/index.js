@@ -22,11 +22,11 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api':{
-        target:'http://127.0.0.1:3009/api',
-        changeOrigin:true,
-        pathRewrite:{
-          '^/api':''
+      '/api': {
+        target: 'http://localhost:3009/api',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
         }
       }
     },
@@ -36,5 +36,5 @@ module.exports = {
     // In our experience, they generally work as expected,
     // just be aware of this issue when enabling this option.
     cssSourceMap: false
+    }
   }
-}

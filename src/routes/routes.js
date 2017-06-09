@@ -13,12 +13,12 @@ import Article from '../components/fronted/Article';
 import NotFound from '../components/NotFound'
 export default [
 
-  {
-    path:'/reg',
-    component:Reg,
-    meta:{auth:false},
-    hidden:true
-  },
+  // {
+  //   path:'/reg',
+  //   component:Reg,
+  //   meta:{auth:false},
+  //   hidden:true
+  // },
   
   {
     path:'/',

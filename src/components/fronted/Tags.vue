@@ -71,7 +71,7 @@ export default {
     }
   },
   mounted(){
-    this.$store.dispatch('changeHeadLine','标签')
+    this.$store.dispatch('changeHeadLine','按分类查看文章')
       // 根据标签名获取文章列表
     api.getNoAuthClass()
       .then(({data:{code,lists}})=>{

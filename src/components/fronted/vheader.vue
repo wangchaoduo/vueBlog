@@ -5,7 +5,7 @@
           <ul>
             <li><router-link to="/home">主页</router-link></li>
             <li><router-link to="/tags">标签</router-link></li>
-            <li><router-link to="/about">关于</router-link></li>
+            <!--<li><router-link to="/about">关于</router-link></li>-->
           </ul>
         </nav>
         <!-- 导航 结束-->
@@ -59,10 +59,10 @@ export default {
     left:0;
     top:0;
       /*background-size: cover; 必须放在background-position后面用 "/" 分割*/
-    background:  url('../../assets/img/bgm.jpg') no-repeat center /cover;
+    background:  url('../../assets/img/bg.jpg') no-repeat center /cover;
     /* brightness()给图片应用一种线性乘法，使其看起来更亮或更暗。如果值是0%，图像会全黑。值是100%，
     则图像无变化。其他的值对应线性乘数效果。值超过100%也是可以的，图像会比原来更亮。如果没有设定值，默认是1。*/
-    filter: brightness(0.7);
+    filter: brightness(0.9);
   }
   nav ul{
     display: flex;

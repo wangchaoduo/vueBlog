@@ -71,7 +71,7 @@ export default {
   },
   mounted(){
     // 封装成一个方法，与分页获取文章列表类似
-    this.$store.dispatch('changeHeadLine','主页')
+    this.$store.dispatch('changeHeadLine','我也不知道你为啥来这里，但你既然来了，那我就只能希望你不知道我是谁了')
     this.loadData(1,this.limit)
   }
 }
