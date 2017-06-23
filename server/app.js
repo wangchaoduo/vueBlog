@@ -8,7 +8,8 @@ app.use(bodyParser.json());
 // 跨域
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With,Content-Type");//预检请求使用
+    // res.header("Access-Control-Allow-Headers", "X-Requested-With,Content-Type");//预检请求使用
+    res.header("Access-Control-Allow-Headers", "X-Requested-With,authorization,Content-Type");//预检请求使用
     res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");//预检请求使用
     next();
 });

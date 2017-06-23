@@ -164,7 +164,6 @@ router.post('/article/remove',checkToken,function (req,res,next){
 }),
 // 编辑文章
 router.post('/article/edit',checkToken,function (req,res,next){
-console.log(req.body);
   var id = req.body.id;
   var classify = req.body.classify
   var title = req.body.title

@@ -25,7 +25,7 @@
           </el-col>
           <el-col :span='12'>
             <!-- 展示区 -->
-            <div style="background:#fff;margin:0 0 0 20px;height:526px;overflow-y:auto;" v-html="markedToHtml" class="article"></div>
+            <div style="background:#fff;margin:0 0 0 20px;height:526px;overflow-y:auto;" v-html="markedToHtml" class="markdown-body"></div>
           </el-col>
         </el-row>
         <el-form-item style="padding:20px 20px 0 0 " >

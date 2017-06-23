@@ -45,5 +45,10 @@ exports.Article = mongolass.model('Article',{
   title:{type:'string'},
   content:{type:'string'},
   contentToMark:{type:'string'}
+});
+exports.Comment = mongolass.model('Comment',{
+  name:{type:'string'},
+  content:{type:'string'},
+  articleId:{type:'string'}
 })
 exports.Article.index({_id:1,classify:-1}).exec();

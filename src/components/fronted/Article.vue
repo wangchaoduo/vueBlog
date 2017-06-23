@@ -1,5 +1,5 @@
 <template lang="html">
-  <article v-loading="loading2"  element-loading-text="加载中" class="article_wrap article">
+  <article v-loading="loading2"  element-loading-text="加载中" class="article_wrap article markdown-body">
     <header>
       <div class="home_title">{{oneArticle.title}}</div>
     <div>
@@ -21,6 +21,7 @@ export default {
   },
   created(){
     // 在这里调用获取一篇文章的api
+    console.log(this)
     api.getOneArticleNoAuth({id:this.$route.params.id})
         .then(({data:{code,oneArticle}})=>{
           if(code==200){

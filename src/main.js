@@ -5,6 +5,7 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-default/index.css';
 import App from './App';
 import 'assets/css/commen.css';//这里的样式可以覆盖index.css
+import 'assets/css/github-markdown.css'//markdown样式
 Vue.use(ElementUI);
 import router from './routes/index'
 import store from './store/index'

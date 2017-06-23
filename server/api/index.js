@@ -1,6 +1,7 @@
  var User = require('../lib/mongo').User;
  var Classify = require('../lib/mongo').Classify;
  var Article = require('../lib/mongo').Article;
+ var Comment = require('../lib/mongo').Comment;
  module.exports = {
    create:function (user){
      return User.create(user).exec();
@@ -67,5 +68,8 @@
   // 编辑一篇文章
   updateArticle:function (postId,data){
       return Article.update({_id:postId},{$set:data}).exec()
+  },
+  addComment:function(postId,date){
+
   }
  }
